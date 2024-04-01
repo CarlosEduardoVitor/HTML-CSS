@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --cor01:#F50C0C;
+    --cor02:#CA2C2C;
+    --cor03:#A03D3D;
+    --cor04:#754141;
+    --cor05:#4A3535;
+    --cor06:#332D2D;
+}
+
+
+* {
+    border: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(../image/Audio-espacial-da-Netflix-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 36px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.botoesheader > a > button {
+    width: 180px;
+    background-color: var(--cor02);
+    color: white;
+    border-width: 1px;
+    padding: 7px;
+    margin-left: 10px;
+    border-radius: 60px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.botoesheader > a > button.botaologin {
+    width: 70px;
+    background-color: var(--cor02);
+    border-radius: 7px;
+}
+
+.botoesheader > a > button:hover {
+    background-color: white;
+    color: var(--cor01);
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.841);
+    color: white;
+    text-align: center;
+    width: 400px;
+    margin-left: 450px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+}
+
+main > h1 {
+    margin-top: 100px;
+    color: #CA2C2C;
+}
+
+main .socialmedia {
+    display: flex;
+    align-content: center;
+    display: block;
+}
+
+main .socialmedia a {
+    text-decoration: none;
+    
+}
+
+main .socialmedia img {
+    border-radius: 10px;
+    width: 36px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+main .socialmedia a:first-child img {
+    margin-left: 0px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+
+main form label {
+    color: #CA2C2C;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+main form label input {
+    background-color: rgba(0, 0, 0, 0.574);
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+    padding: 0px 0.5rem;
+}
+
+main form input[type="submit"]{
+    margin-top: 30px;
+    color: white;
+    background-color: #CA2C2C;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(182, 180, 180);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background-color: rgb(182, 180, 180);
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+footer {
+    background-color: black;
+    padding: 30px;
+}
+
+footer > p {
+    color: rgb(111, 111, 111);
+    margin: 20px;
+}
+
+footer > p > a {
+    color: rgb(135, 135, 135);
+}
+
+footer > ul {
+    list-style-type: none;
+    list-style-position: inside;
+    columns: 4;
+    text-align: justify;
+    padding: 30px 170px;
+    
+}
+
+footer > ul > a {
+    color: rgb(124, 124, 124);
+    font-size: 13px;
+    padding: 6px;
+
+}
